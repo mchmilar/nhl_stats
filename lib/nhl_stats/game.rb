@@ -21,6 +21,18 @@ module NHLStats
       @game_data.start_time
     end
 
+    def end_time
+      @game_data.end_time
+    end
+
+    def season
+      @game_data.season
+    end
+
+    def type
+      @game_data.type
+    end
+
     private
 
     def init_game_data
