@@ -1,11 +1,10 @@
 require 'open-uri'
 require 'json'
 require 'nhl_stats/helpers/constants'
+require 'nhl_stats/game/game_data'
 
 module NHLStats
   class Game
-
-    attr_reader :body
 
     def self.fetch_game(game_id:)
       url = "#{API_BASE_URL}/game/#{game_id}/feed/live"
@@ -19,6 +18,17 @@ module NHLStats
 
     def initialize(body)
       @body = body
+      init_game_data
+    end
+
+    def start_time
+      @game_data[:dateTime][:dateTime]
+    end
+
+    private
+
+    def init_game_data
+      @game_data = Game::GameData.new(@body[:game_data])
     end
   end
 end
