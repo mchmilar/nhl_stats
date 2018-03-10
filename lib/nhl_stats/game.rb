@@ -14,15 +14,13 @@ module NHLStats
       # return Game object
     end
 
-    private
-
     def initialize(body)
       @body = body
       init_game_data
     end
 
     def start_time
-      @game_data[:dateTime][:dateTime]
+      @game_data.start_time
     end
 
     private

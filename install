@@ -1,0 +1,1 @@
+gem build nhl_stats.gemspec && gem install nhl_stats-0.0.1.gem
