@@ -5,7 +5,7 @@ require "nhl_stats/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nhl_stats"
-  spec.version       = NhlStats::VERSION
+  spec.version       = NHLstats::VERSION
   spec.authors       = ["Mark Chmilar"]
   spec.email         = ["mark.chmilar@gmail.com"]
 

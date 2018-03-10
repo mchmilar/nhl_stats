@@ -1,3 +1,6 @@
+require 'byebug'
+require 'pry-byebug'
+
 module NHLStats
   class Game
     class GameData
@@ -6,6 +9,7 @@ module NHLStats
       end
 
       def start_time
+        binding.pry
         @body[:dateTime][:dateTime]
       end
     end
