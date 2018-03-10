@@ -10,8 +10,6 @@ module NHLStats
       url = "#{API_BASE_URL}/game/#{game_id}/feed/live"
       response = JSON.parse(open(url).read, symbolize_names: true)
       new(response)
-      # fetch game data
-      # return Game object
     end
 
     def initialize(body)
