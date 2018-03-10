@@ -1,1 +1,1 @@
-gem build nhl_stats.gemspec && gem install nhl_stats-0.0.1.gem
+gem build nhl_stats.gemspec && gem install nhl_stats-0.1.0.gem && pry -r ./lib/nhl_stats.rb

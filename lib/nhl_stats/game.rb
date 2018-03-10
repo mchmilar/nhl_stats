@@ -26,7 +26,7 @@ module NHLStats
     private
 
     def init_game_data
-      @game_data = Game::GameData.new(@body[:game_data])
+      @game_data = Game::GameData.new(@body[:gameData])
     end
   end
 end

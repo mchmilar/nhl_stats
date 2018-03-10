@@ -9,8 +9,7 @@ module NHLStats
       end
 
       def start_time
-        binding.pry
-        @body[:dateTime][:dateTime]
+        @body[:datetime][:dateTime]
       end
     end
   end
